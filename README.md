@@ -2,7 +2,7 @@ Repositorio con el desarrollo de la aplicación web propuesta por el grupo 23 de
 
 Integrantes:
 
-Jonathan Arboleda
-Rodrigo Gallego
-William Guerrero
-Héctor Rincón
+- Jonathan Arboleda
+- Rodrigo Gallego
+- William Guerrero
+- Héctor Rincón
