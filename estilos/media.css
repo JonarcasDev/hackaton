@@ -1,0 +1,62 @@
+/* media query */
+
+@media only screen and (max-width: 720px) {
+
+    html{
+        font-size: 15px;
+     }
+     .nav{
+         display: flex;
+         flex-wrap: wrap;
+         font-size: 15px;
+ 
+     }
+       
+        .footer{
+            height: 20%;
+         }
+        .header{height: 20%;}
+
+        .testimony__grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap:30px;
+ 
+      }
+ 
+     .container__element-2, .container__element-3 {
+         width: calc(50% - 20px);        
+     }
+
+ 
+    }  
+     @media only screen and (max-width: 360px) {
+         
+     html{
+         font-size: 10px;
+      }
+     .testimony__grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap:30px;
+}
+
+     }
+     @media only screen and (max-width: 320px) {
+
+        html{
+            font-size: 10px;
+         }
+         .nav{
+           
+                display: flexbox;
+                direction: rtl;   
+            }    
+       
+       
+         
+        }
+
+
