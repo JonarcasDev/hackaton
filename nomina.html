@@ -39,7 +39,7 @@
                 <br>
                 <label for="ccf">Caja de Compensación Familiar</label>
                 <select name="cajas" id="ccf">
-                    <option value="">--Escoja la CCF a la que está afiliado--</option>
+                    <option value="">--Seleccione la CCF a la que está afiliado--</option>
     
                         <!-- Aquí va código para sacar la lista de un archivo -->
     
@@ -47,7 +47,7 @@
 
                 <label for="arl">Administradora de Riesgos Laborales</label>
                 <select name="riesgo" id="arl">
-                    <option value="">--Escoja la ARL a la que está afiliado--</option>
+                    <option value="">--Seleccione la ARL a la que está afiliado--</option>
 
                     <!-- Aquí va código para sacar la lista de un archivo -->
 
@@ -55,7 +55,7 @@
                 
                 <label for="risk">Tarifa de Riesgo</label>
                 <select name="tarifa" id="risk">
-                    <option value="">--Escoja la tarifa asignada por la ARL--</option>
+                    <option value="">--Seleccione la tarifa asignada por la ARL--</option>
     
                         <!-- Aquí va código para sacar la lista de un archivo -->
     
@@ -68,10 +68,11 @@
 
                 <label for="id_type">Tipo de Identificación</label>
                 <select name="tipo" id="id_type">
-                    <option value="">--Escoja el tipo de identificación--</option>
-    
-                        <!-- Aquí va código para sacar la lista de un archivo -->
-    
+                    <option value="">--Seleccione el tipo de identificación--</option>
+                    <option value="cedula">Cédula de Ciudadanía</option>
+                    <option value="tarjeta">Tarjeta de Identidad</option>
+                    <option value="extranjeria">Cédula de Extranjería</option>
+                    <option value="pasaporte">Pasaporte</option>
                 </select>
 
                 <label for="id_number">Número de Identificación</label>
@@ -84,6 +85,30 @@
                 <label for="transport">Auxilio de Transporte</label>
                 <input type="text" id="transport" name="transport" minlength="6"><br>
                 <br>
+
+                <label for="eps">Administradora de Salud (EPS)</label>
+                <select name="eps" id="eps">
+                    <option value="">--Seleccione la EPS a la que está afiliado su empleado--</option>
+
+                    <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select>
+
+                <label for="afp">Administradora de Pensiones</label>
+                <select name="afp" id="afp">
+                    <option value="">--Seleccione la Administradora de Pensiones a la que está afiliado su empleado--</option>
+
+                    <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select>
+
+                <label for="cesantias">Administradora de Cesantías</label>
+                <select name="cesantias" id="cesantias">
+                    <option value="">--Seleccione la Administradora de Cesantías a la que está afiliado su empleado--</option>
+
+                    <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select>
 
                 <h3>Devengos</h3><br>
                 <br>

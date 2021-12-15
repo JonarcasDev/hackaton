@@ -44,10 +44,11 @@
 
                 <label for="id_type">Tipo de Identificación</label>
                 <select name="tipo" id="id_type">
-                    <option value="">--Escoja el tipo de identificación--</option>
-    
-                        <!-- Aquí va código para sacar la lista de un archivo -->
-    
+                    <option value="">--Seleccione el tipo de identificación--</option>
+                    <option value="cedula">Cédula de Ciudadanía</option>
+                    <option value="tarjeta">Tarjeta de Identidad</option>
+                    <option value="extranjeria">Cédula de Extranjería</option>
+                    <option value="pasaporte">Pasaporte</option>
                 </select>
 
                 <label for="id_number">Número de Identificación</label>
@@ -65,17 +66,35 @@
                 <input type="date" id="start" name="start" required><br>
                 <br>
 
-                <h3>Devengos mes a mes dentro del semestre</h3><br>
+                <label for="eps">Administradora de Salud (EPS)</label>
+                <select name="eps" id="eps">
+                    <option value="">--Seleccione la EPS a la que está afiliado su empleado--</option>
+
+                    <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select>
+
+                <label for="afp">Administradora de Pensiones</label>
+                <select name="afp" id="afp">
+                    <option value="">--Seleccione la Administradora de Pensiones a la que está afiliado su empleado--</option>
+
+                    <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select>
+
+                <h3>Devengos mes a mes dentro del semestre (no aplica para vacaciones)</h3><br>
                 <br>
 
                 <!-- Aquí va código -->
 
                 <label for="perk">Prestación a Liquidar</label>
                 <select name="prestacion" id="perk">
-                    <option value="">--Escoja la prestación a liquidar--</option>
-
-                        <!-- Aquí va código para sacar la lista de un archivo -->
-
+                    <option value="">--Seleccione la prestación a liquidar--</option>
+                    <option value="p1">Prima de servicio primer semestre</option>
+                    <option value="p2">Prima de servicio segundo semestre</option>
+                    <option value="cesantias">Cesantías</option>
+                    <option value="int_cesantias">Intereses de Cesantías</option>
+                    <option value="vacaciones">Vacaciones</option>
                 </select><br>
                 <br>
 
