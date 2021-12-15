@@ -121,7 +121,6 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
     gap:10px;
 }
 
@@ -129,9 +128,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
-=======
-    gap:30px;
->>>>>>> 98db78892969c6784a58c65325d704c70b793e8f
 }
 
 .testimony__item{
@@ -145,10 +141,6 @@ body{
     margin-bottom: 50px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 98db78892969c6784a58c65325d704c70b793e8f
 .testimony__item2{
     width: 75%;
     background:rgb(77, 51, 223);
@@ -168,11 +160,6 @@ body{
     text-align: left;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 98db78892969c6784a58c65325d704c70b793e8f
 .testimony__person{
     display: flex;
     align-items: center;
