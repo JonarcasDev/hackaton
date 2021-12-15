@@ -38,7 +38,20 @@ body{
     position: relative;
 }
 
+.hero2{
+    background-image: var(--background), url('../img/contabilidad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
 .hero .container{
+    padding: 0;
+}
+
+.hero2 .container{
     padding: 0;
 }
 
@@ -108,7 +121,6 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
     gap:10px;
 }
 
@@ -116,9 +128,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
-=======
-    gap:30px;
->>>>>>> 350d166d47d0f2b99bf22f4f356e10f1379a9f56
 }
 
 .testimony__item{
@@ -132,7 +141,6 @@ body{
     margin-bottom: 50px;
 }
 
-<<<<<<< HEAD
 .testimony__item2{
     width: 75%;
     background:rgb(77, 51, 223);
@@ -152,8 +160,6 @@ body{
     text-align: left;
 }
 
-=======
->>>>>>> 350d166d47d0f2b99bf22f4f356e10f1379a9f56
 .testimony__person{
     display: flex;
     align-items: center;
@@ -208,4 +214,12 @@ footer{
 
 .marq{
     color: #fff;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    font-size: 125%;
 }
