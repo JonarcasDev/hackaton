@@ -20,48 +20,71 @@
         </div>
     </header>
 
+<!-- TODOS LOS DATOS QUE SE INGRESEN Y LOS CALCULOS QUE SE HAGAN DEBEN SER LOCALES Y QUE NO SE TRANSMITAN A NINGUNA PARTE -->
+
     <main>
         <section class="start container">
-            <!-- <h2 class="subtitle">¿Qué desea liquidar?</h2>
-            <div class="testimony__grid2">
-                <a href="./nomina.html">
-                    <article class="testimony__item2">
-                        <div class="testimony__text">
-                            <h2 class="testimony__name2">NÓMINA PERIÓDICA</h2>
-                            <br>
-                            <p class="testimony__verification2">Escoja esta opción si desea hacer la liquidación
-                                de la nómina de sus empleados por el periodo que puede ser semanal, quincenal o mensual
-                            </p>
-                        </div>
-                    </article>
-                </a>
-                
-                <a href="./prestaciones.html">
-                    <article class="testimony__item2">
-                        <div class="testimony__text">
-                            <h2 class="testimony__name2">PRESTACIONES SOCIALES</h2>
-                            <br>
-                            <p class="testimony__verification2">Escoja esta opción si desea hacer la liquidación
-                                de prestaciones sociales como: prima de servicios, vacaciones, cesantías e
-                                intereses de cesantías
-                            </p>
-                        </div>
-                    </article>
-                </a>
-                
-                <a href="./definitiva.html">
-                    <article class="testimony__item2">
-                        <div class="testimony__text">
-                            <h2 class="testimony__name2">LIQUIDACIÓN DEFINITIVA</h2>
-                            <br>
-                            <p class="testimony__verification2">Escoja esta opción si desea hacer la liquidación
-                                de los saldos a pagar por salarios y prestaciones al momento del retiro de sus
-                                empleados
-                            </p>
-                        </div>
-                    </article>
-                </a>                
-            </div> -->
+            <h3 class="subtitle">PRESTACIONES SOCIALES</h3>
+            <form action="#" method="#">
+                <h2>DATOS DEL EMPLEADOR</h2><br>
+                <label for="company">Razón Social</label>
+                <input type="text" id="company" name="company" placeholder="Tal como figura en su RUT" required>
+
+                <label for="id">NIT</label>
+                <input type="text" id="id" name="id" placeholder="Sin puntos ni dígito de verificación" required>
+
+                <label for="dv">Dígito de verificación</label>
+                <input type="text" id="dv" name="dv" placeholder="Si no tiene RUT, vacío"><br>
+                <br>
+
+                <h2>DATOS DEL EMPLEADO</h2>
+                <label for="employee">Nombre Completo</label>
+                <input type="text" id="employee" name="employee" placeholder="Tal como figura en la cédula" required>
+
+                <label for="id_type">Tipo de Identificación</label>
+                <select name="tipo" id="id_type">
+                    <option value="">--Escoja el tipo de identificación--</option>
+    
+                        <!-- Aquí va código para sacar la lista de un archivo -->
+    
+                </select>
+
+                <label for="id_number">Número de Identificación</label>
+                <input type="text" id="id_number" name="id_number" placeholder="Sin puntos" minlength="6" maxlength="10" required><br>
+                <br>
+
+                <label for="salary">Salario Básico</label>
+                <input type="text" id="salary" name="salary" placeholder="Sólo números" minlength="6" required>
+
+                <label for="transport">Auxilio de Transporte</label>
+                <input type="text" id="transport" name="transport" minlength="6"><br>
+                <br>
+
+                <label for="start">Fecha de Inicio de Contrato</label>
+                <input type="date" id="start" name="start" required><br>
+                <br>
+
+                <h3>Devengos mes a mes dentro del semestre</h3><br>
+                <br>
+
+                <!-- Aquí va código -->
+
+                <label for="perk">Prestación a Liquidar</label>
+                <select name="prestacion" id="perk">
+                    <option value="">--Escoja la prestación a liquidar--</option>
+
+                        <!-- Aquí va código para sacar la lista de un archivo -->
+
+                </select><br>
+                <br>
+
+                <input type="button" id="btn-calc" value="LIQUIDAR">
+
+                <input type="button" id="btn-new-employee" value="NUEVO EMPLEADO">
+
+                <input type="button" id="btn-exit" value="SALIR">
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
