@@ -36,7 +36,7 @@
             <p>Por favor digite las credenciales necesarias correctamente</p>
             <br>
             <div>
-            <form name="formulario" method="post" action="https://jonarcasdev.github.io/hackaton/login.html">
+            <form name="formulario" method="POST" action="https://jonarcasdev.github.io/hackaton/login.html">
                 <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres -->
                 Usuario: <br>
                 <input type="text" name="nombre" placeholder="Por ejemplo, Juan"
@@ -57,9 +57,10 @@
                 <input type="password" name="pass" placeholder="Contraseña"
                        minlength="11" required />
 <br><br>
-                       <input type="submit" name="pass" placeholder="Enviar"
-                        required />
+                       <!--<input type="submit" name="pass" placeholder="Enviar"
+                        required />-->
             </form>
+            <a href="login.html"><button>Ingresar</button></a>
         </div>
             <br>
             <br>
@@ -94,7 +95,7 @@
                 name: '',
                 document: '',
                 email: '',
-                password: ''
+                password: '',
             })
         })
         .then((res)=>{
