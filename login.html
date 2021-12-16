@@ -36,14 +36,21 @@
             <h2 class="subtitle">Iniciar Sesión</h2>
             <p>Por favor digite sus credenciales correctamente</p>
             <br>
-            <form action="#" method="#">
-
-                    <label>Correo Electrónico: <input type="email"></label><br>
-                    <br>
-                    <label>Contraseña: <input type="password"></label><br>
-                    <br>
-            <input type="submit" value="Enviar">
-            </form>
+            <form name="formulario" method="post" action="https://jonarcasdev.github.io/hackaton/calc.html">
+            
+                        <!-- Correo electronico -->
+                Correo electronico:<br>
+                <input type="email" name="pass" placeholder="Ejemplo@gmail.com"
+                       minlength="11" required />
+<br><br>
+                <!-- Contraseña. Obligatorio, mínimo 11 carácteres -->
+                Contraseña:<br>
+                <input type="password" name="pass" placeholder="Contraseña"
+                       minlength="11" required />
+<br><br>
+                       <input type="submit" name="pass" placeholder="Enviar"
+                        required />
+            </form> 
             <br>
             <br>
             <br>
@@ -69,6 +76,21 @@
             <marquee class="marq" behavior="" direction="">GRUPO 23®</marquee>
         </div>
     </footer>
+    <script>
+        fetch('https://hackaton2021backend.herokuapp.com/user/auth', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: '',
+                password: ''
+            })
+        })
+        .then((res)=>{
+            debugger
+        })
+    </script>
     <script src="https://kit.fontawesome.com/f363ef213d.js" crossorigin="anonymous"></script>
 </body>
 </html>
