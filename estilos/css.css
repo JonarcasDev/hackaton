@@ -382,3 +382,13 @@ a:link{
 a:hover{
     font-size: 125%;
 }
+
+input:valid,
+textarea:valid {
+    background: green;
+}
+
+input:invalid,
+textarea:invalid {
+    background: red;
+}
