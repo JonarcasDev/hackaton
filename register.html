@@ -35,17 +35,32 @@
             <h2 class="subtitle">Registro</h2>
             <p>Por favor digite las credenciales necesarias correctamente</p>
             <br>
-            <form action="#" method="#">
-                <label>Nombre completo: <input type="text"></label><br>
-                <br>
-                 <label>Documento de Identidad: <input type="text"></label><br>
-                 <br>
-                    <label>Correo Electrónico: <input type="email"></label><br>
-                    <br>
-                    <label>Contraseña: <input type="password"></label><br>
-                    <br>
-            <input type="submit" value="Enviar">
+            <div>
+            <form name="formulario" method="post" action="https://jonarcasdev.github.io/hackaton/login.html">
+                <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres -->
+                Usuario: <br>
+                <input type="text" name="nombre" placeholder="Por ejemplo, Juan"
+                       minlength="5" maxlength="20" required />
+                       <br><br>
+                        <!-- Documento -->
+                Numero de documento:<br>
+                <input type="number" name="pass" placeholder="00000000"
+                       min="9999999" required />
+<br><br>
+                        <!-- Correo electronico -->
+                Correo electronico:<br>
+                <input type="email" name="pass" placeholder="Ejemplo@gmail.com"
+                       minlength="11" required />
+<br><br>
+                <!-- Contraseña. Obligatorio, mínimo 11 carácteres -->
+                Contraseña:<br>
+                <input type="password" name="pass" placeholder="Contraseña"
+                       minlength="11" required />
+<br><br>
+                       <input type="submit" name="pass" placeholder="Enviar"
+                        required />
             </form>
+        </div>
             <br>
             <br>
             <br>
@@ -69,6 +84,23 @@
             <marquee class="marq" behavior="" direction="">GRUPO 23®</marquee>
         </div>
     </footer>
+    <script>
+        fetch('https://hackaton2021backend.herokuapp.com/user', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: '',
+                document: '',
+                email: '',
+                password: ''
+            })
+        })
+        .then((res)=>{
+            debugger
+        })
+    </script>
     <script src="https://kit.fontawesome.com/f363ef213d.js" crossorigin="anonymous"></script>
 </body>
 </html>
